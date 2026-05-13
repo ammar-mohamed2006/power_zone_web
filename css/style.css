@@ -1,5 +1,5 @@
 /* ============================================================
-   CSS Variables - الألوان والقيم المشتركة
+   CSS Variables
    ============================================================ */
 :root {
     --primary:    #ffb400;
@@ -12,7 +12,8 @@
     --text-muted: #ccc;
     --transition: 0.3s ease;
 }
- 
+
+
 /* ============================================================
    Reset & Base
    ============================================================ */
@@ -22,13 +23,13 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
- 
+
 body {
     background: rgb(19, 19, 19);
     color: var(--text-white);
 }
 
- 
+
 /* ============================================================
    Navbar
    ============================================================ */
@@ -47,24 +48,24 @@ body {
     box-sizing: border-box;
     border-bottom: 2px solid var(--primary);
 }
- 
+
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--primary);
 }
- 
+
 .logo img {
     height: 50px;
 }
- 
+
 .logo h1 {
     font-size: 20px;
     color: var(--primary);
     margin: 0;
 }
- 
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -72,7 +73,7 @@ body {
     margin: 0;
     padding: 0;
 }
- 
+
 .nav-links a {
     color: var(--text-white);
     text-decoration: none;
@@ -83,14 +84,21 @@ body {
     font-weight: bold;
     transition: var(--transition);
 }
- 
-.nav-links a i { color: var(--primary); }
- 
+
+.nav-links a i {
+    color: var(--primary);
+}
+
 .nav-links a:hover,
-.nav-links a.active { color: var(--primary); }
- 
-.nav-links a:hover i { color: var(--text-white); }
- 
+.nav-links a.active {
+    color: var(--primary);
+}
+
+.nav-links a:hover i {
+    color: var(--text-white);
+}
+
+
 /* ============================================================
    Navbar Buttons (Login / Signup)
    ============================================================ */
@@ -104,14 +112,14 @@ body {
     font-weight: bold;
     transition: var(--transition);
 }
- 
+
 .login:hover {
     border-color: var(--primary);
     color: var(--primary);
     background: rgba(255, 180, 0, 0.1);
     transform: translateY(-2px);
 }
- 
+
 .signup {
     background: var(--primary);
     color: var(--bg-black);
@@ -122,7 +130,7 @@ body {
     border: 2px solid var(--primary);
     transition: 0.4s ease;
 }
- 
+
 .signup:hover {
     background: var(--text-white);
     border-color: var(--text-white);
@@ -130,16 +138,19 @@ body {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
- 
+
+
 /* ============================================================
    Main Wrapper
    ============================================================ */
 .main-wrapper {
-    padding-top: 100px; /* عشان يبعد عن النافبار الثابت */
-    min-height: auto;   /* غيرنا دي من 100vh لـ auto */
-    padding-bottom: 50px; /* مسافة بسيطة تحت آخر عنصر للمظهر الجمالي */
+    display: block;
+    padding-top: 100px;
+    min-height: auto;
+    padding-bottom: 50px;
 }
- 
+
+
 /* ============================================================
    Hero
    ============================================================ */
@@ -153,7 +164,7 @@ body {
     color: var(--text-white);
     padding: 20px;
 }
- 
+
 .hero-content h1 {
     font-size: 70px;
     color: var(--primary);
@@ -161,22 +172,24 @@ body {
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
- 
+
 .hero-content h2 {
     font-size: 70px;
     letter-spacing: 2px;
     margin-bottom: 20px;
     font-weight: 600;
 }
- 
-.hero-content span { color: var(--primary); }
- 
+
+.hero-content span {
+    color: var(--primary);
+}
+
 .hero-content p {
     font-size: 20px;
     margin-bottom: 20px;
     line-height: 1.7;
 }
- 
+
 .btn-online {
     background: var(--primary);
     color: var(--bg-black);
@@ -185,7 +198,8 @@ body {
     border-radius: 50px;
     font-weight: bold;
 }
- 
+
+
 /* ============================================================
    About
    ============================================================ */
@@ -198,7 +212,7 @@ body {
     color: var(--text-white);
 }
 
-.mainabout{
+.mainabout {
     background: url(../images/heropower3.jpg) no-repeat center center / cover;
     background-size: cover;
     background-position: center;
@@ -207,46 +221,52 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;g
-   
+    padding: 20px;
 }
 
-
-  .mainabout-content h2{
+.mainabout-content h2 {
     font-size: 70px;
     margin-bottom: 20px;
 }
-.mainabout-content span{
+
+.mainabout-content span {
     color: var(--primary);
-   text-decoration: none;
+    text-decoration: none;
 }
+
 .about-img img {
     width: 400px;
     border-radius: 10px;
 }
- 
-.about-text { max-width: 500px; }
- 
+
+.about-text {
+    max-width: 500px;
+}
+
 .about-text h2,
-.about-text p { margin-bottom: 20px; }
- 
+.about-text p {
+    margin-bottom: 20px;
+}
+
 .features {
     display: flex;
     gap: 40px;
 }
-.story{
-     background: url(../images/gym1.jpg) no-repeat center / cover;
+
+.features li {
+    padding-left: 5px;
+    padding-bottom: 20px;
+}
+
+.story {
+    background: url(../images/gym1.jpg) no-repeat center / cover;
     background-size: cover;
     background-position: center;
     text-align: center;
     padding: 150px 20px;
 }
- 
-.features li {
-    padding-left: 5px;
-    padding-bottom: 20px;
-}
- 
+
+
 /* ============================================================
    Services
    ============================================================ */
@@ -256,16 +276,13 @@ body {
     background: var(--bg-black);
     color: var(--text-white);
 }
- 
+
 .services-boxs {
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
 }
- 
-/* ============================================================
-   Box (Services Cards)
-   ============================================================ */
+
 .box {
     background: var(--bg-dark);
     width: 30%;
@@ -276,12 +293,12 @@ body {
     line-height: 1.6;
     padding: 20px;
 }
- 
+
 .box p {
     color: #f8f8ff;
     transition: var(--transition);
 }
- 
+
 .box img {
     width: 90%;
     height: 200px;
@@ -290,19 +307,22 @@ body {
     margin: 10px auto;
     border-radius: 20px;
 }
- 
+
 .box:hover {
     transform: translateY(-10px);
     border-color: var(--primary);
 }
- 
-.box:hover p { color: var(--text-white); }
- 
+
+.box:hover p {
+    color: var(--text-white);
+}
+
 .box:hover h3 {
     color: var(--primary);
     transition: var(--transition);
 }
- 
+
+
 /* ============================================================
    Pricing
    ============================================================ */
@@ -312,7 +332,7 @@ body {
     background: var(--bg-dark);
     color: var(--text-white);
 }
- 
+
 .pricing-boxes {
     display: flex;
     justify-content: center;
@@ -321,7 +341,7 @@ body {
     margin-top: 50px;
     flex-wrap: wrap;
 }
- 
+
 .plan-card {
     background: var(--bg-card);
     width: 320px;
@@ -333,21 +353,23 @@ body {
     flex-direction: column;
     align-items: center;
 }
- 
+
 .plan-card:hover {
     border-color: var(--primary);
     transform: translateY(-10px);
 }
- 
+
 .plan-card h2 {
     font-size: 45px;
     color: var(--text-white);
     margin: 10px 0;
     transition: color var(--transition);
 }
- 
-.plan-card:hover h2 { color: var(--primary); }
- 
+
+.plan-card:hover h2 {
+    color: var(--primary);
+}
+
 .plan-card ul {
     list-style: none;
     padding: 0;
@@ -355,20 +377,20 @@ body {
     text-align: left;
     width: 100%;
 }
- 
+
 .plan-card ul li {
     padding: 8px 0;
     border-bottom: 1px solid #222;
     font-size: 15px;
     color: var(--text-muted);
 }
- 
+
 .plan-card ul li::before {
     content: "✓";
     color: var(--primary);
     font-weight: bold;
 }
- 
+
 .btn {
     display: inline-block;
     padding: 12px 30px;
@@ -380,13 +402,12 @@ body {
     margin-top: auto;
     transition: var(--transition);
 }
- 
+
 .btn:hover {
     background: var(--text-white);
     transform: scale(1.2);
 }
- 
-/* Plans Page Cards */
+
 .plans {
     display: flex;
     justify-content: center;
@@ -394,7 +415,7 @@ body {
     flex-wrap: wrap;
     margin: 40px;
 }
- 
+
 .card {
     background: #222;
     padding: 30px;
@@ -404,18 +425,24 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transition: var(--transition);
 }
- 
-.card:hover { transform: translateY(-5px); }
- 
-.highlight { border: 2px solid var(--primary); }
- 
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.highlight {
+    border: 2px solid var(--primary);
+}
+
 .card h2 {
     margin-bottom: 15px;
     color: var(--primary);
 }
- 
-.card p { margin: 10px 0; }
- 
+
+.card p {
+    margin: 10px 0;
+}
+
 button {
     background: var(--primary);
     border: none;
@@ -425,9 +452,12 @@ button {
     font-weight: bold;
     margin-top: 10px;
 }
- 
-button:hover { background: darkorange; }
- 
+
+button:hover {
+    background: darkorange;
+}
+
+
 /* ============================================================
    FAQ
    ============================================================ */
@@ -436,25 +466,25 @@ button:hover { background: darkorange; }
     background: var(--bg-dark);
     color: var(--text-white);
 }
- 
+
 .faq-title {
     text-align: center;
     font-size: 36px;
     color: var(--primary);
     margin-bottom: 10px;
 }
- 
+
 .faq-subtitle {
     text-align: center;
     color: #888;
     margin-bottom: 50px;
 }
- 
+
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
 }
- 
+
 .faq-item {
     background: var(--bg-card);
     border: 1px solid var(--border);
@@ -463,7 +493,7 @@ button:hover { background: darkorange; }
     overflow: hidden;
     transition: all var(--transition);
 }
- 
+
 .faq-question {
     padding: 25px;
     display: flex;
@@ -471,41 +501,44 @@ button:hover { background: darkorange; }
     align-items: center;
     cursor: pointer;
 }
- 
+
 .faq-question h3 {
     margin: 0;
     font-size: 18px;
     font-weight: 600;
     transition: color var(--transition);
 }
- 
+
 .faq-question .icon {
     color: var(--primary);
     font-size: 20px;
     font-weight: bold;
     transition: transform var(--transition);
 }
- 
+
 .faq-answer {
     padding: 0 25px 25px;
     border-top: 1px solid #222;
 }
- 
+
 .faq-answer p {
     margin: 15px 0 0;
     color: #bbb;
     line-height: 1.6;
 }
- 
+
 .faq-item:hover {
     border-color: var(--primary);
     transform: translateY(-5px);
     background: #222;
     box-shadow: 0 10px 20px rgba(255, 165, 0, 0.1);
 }
- 
-.faq-item:hover h3 { color: var(--primary); }
- 
+
+.faq-item:hover h3 {
+    color: var(--primary);
+}
+
+
 /* ============================================================
    Contact Section (Home Page)
    ============================================================ */
@@ -515,26 +548,26 @@ button:hover { background: darkorange; }
     color: var(--text-white);
     text-align: center;
 }
- 
+
 .contact-title {
     font-size: 40px;
     color: var(--primary);
     margin-bottom: 10px;
     text-transform: uppercase;
 }
- 
+
 .contact-subtitle {
     color: #777;
     margin-bottom: 60px;
 }
- 
+
 .contact-boxes {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
- 
+
 .contact-card {
     background: var(--bg-dark);
     padding: 40px 30px;
@@ -543,66 +576,65 @@ button:hover { background: darkorange; }
     border: 1px solid #222;
     transition: all 0.4s ease;
 }
- 
+
 .contact-icon {
     font-size: 35px;
     margin-bottom: 20px;
     display: inline-block;
 }
- 
+
 .contact-card h4 {
     color: var(--primary);
     font-size: 20px;
     margin-bottom: 15px;
 }
- 
+
 .contact-card p {
     color: var(--text-muted);
     line-height: 1.6;
     margin: 5px 0;
 }
- 
+
 .contact-card:hover {
     background: var(--bg-card);
     border-color: var(--primary);
     transform: translateY(-15px);
     box-shadow: 0 15px 30px rgba(255, 165, 0, 0.15);
 }
- 
+
 .contact-card:hover .contact-icon {
     transform: scale(1.2);
     transition: var(--transition);
 }
- 
+
+
 /* Contact Page Form */
 .contact-container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 40px 20px;
 }
-.main-wrapper{
-   display:block;
-}
- 
+
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
     margin-top: 40px;
 }
-.contact-info{
-    padding-top:20px;
+
+.contact-info {
+    padding-top: 20px;
     display: block;
 }
 
 .info-item {
     display: flex;
 }
- 
+
 .input-group {
     margin-bottom: 30px;
 }
- 
+
 .input-group input,
 .input-group textarea {
     width: 100%;
@@ -613,7 +645,7 @@ button:hover { background: darkorange; }
     border-radius: 8px;
     outline: none;
 }
- 
+
 .input-group label {
     position: absolute;
     left: 15px;
@@ -622,7 +654,7 @@ button:hover { background: darkorange; }
     transition: var(--transition);
     pointer-events: none;
 }
- 
+
 .input-group input:focus ~ label,
 .input-group input:not(:placeholder-shown) ~ label {
     top: -20px;
@@ -630,22 +662,22 @@ button:hover { background: darkorange; }
     color: var(--primary);
     font-size: 12px;
 }
- 
+
 .video-preview {
-    width: 100%;       /* يملأ عرض الأب */
-    height: 300px;     /* حدد الطول اللي يناسب تصميمك */
-    overflow: hidden;  /* يقطع أي زيادة */
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
     border-radius: 15px;
     position: relative;
 }
 
-/* الفيديو نفسه جواه */
 .fill-video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* أهم سطر: بيخلي الفيديو يملأ البوكس بالكامل زي الـ Background */
+    object-fit: cover;
 }
- 
+
+
 /* ============================================================
    Footer
    ============================================================ */
@@ -655,7 +687,7 @@ button:hover { background: darkorange; }
     padding: 60px 20px 20px;
     border-top: 2px solid var(--primary);
 }
- 
+
 .footer-container {
     max-width: 1100px;
     margin: 0 auto;
@@ -664,60 +696,64 @@ button:hover { background: darkorange; }
     flex-wrap: wrap;
     gap: 40px;
 }
- 
+
 .footer-column {
     flex: 1;
     min-width: 250px;
 }
- 
+
 .footer-column.about {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
- 
+
 .footer-column.about p {
     margin-top: 15px;
     max-width: 280px;
 }
- 
+
 .footer-logo {
     font-size: 28px;
     margin-bottom: 15px;
 }
- 
+
 .footer-logo span,
-.footer-column h3 { color: var(--primary); }
- 
+.footer-column h3 {
+    color: var(--primary);
+}
+
 .footer-column h3 {
     margin-bottom: 20px;
     font-size: 20px;
 }
- 
+
 .footer-column ul {
     list-style: none;
     padding: 0;
 }
- 
-.footer-column ul li { margin-bottom: 10px; }
- 
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
 .footer-column ul li a {
     color: #bbb;
     text-decoration: none;
     transition: var(--transition);
 }
- 
+
 .footer-column ul li a:hover {
     color: var(--primary);
     padding-left: 10px;
 }
- 
+
 .social-icons {
     display: flex;
     gap: 15px;
     margin-top: 15px;
 }
- 
+
 .social-link {
     width: 45px;
     height: 45px;
@@ -732,17 +768,17 @@ button:hover { background: darkorange; }
     transition: 0.4s ease-in-out;
     border: 1px solid var(--border);
 }
- 
+
 .social-link:hover {
     background: var(--primary);
     color: var(--bg-black);
     transform: translateY(-15px) rotate(360deg);
 }
- 
+
 .social-link.facebook:hover  { background: #1877F2; color: var(--text-white); }
 .social-link.instagram:hover { background: #E4405F; color: var(--text-white); }
 .social-link.twitter:hover   { background: #1DA1F2; color: var(--text-white); }
- 
+
 .footer-bottom {
     text-align: center;
     margin-top: 50px;
@@ -751,34 +787,41 @@ button:hover { background: darkorange; }
     color: #666;
     font-size: 14px;
 }
- 
-.footer { /* Plans page footer */
+
+.footer {
     background: var(--bg-black);
     text-align: center;
     padding: 15px;
     margin-top: 40px;
 }
- 
+
+
 /* ============================================================
    Dashboard
    ============================================================ */
-.dashboard-body { background-color: #121212; }
- 
+.dashboard-body {
+    background-color: #121212;
+}
+
 .container {
     width: 85%;
     margin: 50px auto;
     text-align: center;
 }
- 
-.welcome-box { margin-bottom: 50px; }
- 
+
+.welcome-box {
+    margin-bottom: 50px;
+}
+
 .welcome-box h1 {
     font-size: 40px;
     color: var(--text-white);
 }
- 
-.welcome-box span { color: var(--primary); }
- 
+
+.welcome-box span {
+    color: var(--primary);
+}
+
 .main-content {
     display: flex;
     justify-content: center;
@@ -786,8 +829,7 @@ button:hover { background: darkorange; }
     flex-wrap: wrap;
     margin-top: 40px;
 }
- 
-/* Dashboard Box Cards */
+
 .dashboard-box {
     background-color: #1e1e1e;
     flex: 1;
@@ -800,44 +842,47 @@ button:hover { background: darkorange; }
     transition: var(--transition);
     text-align: center;
 }
- 
+
 .dashboard-box:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(255, 180, 0, 0.1);
     background-color: #252525;
 }
- 
+
 .dashboard-box i {
     font-size: 45px;
     color: var(--primary);
     margin-bottom: 20px;
 }
- 
+
 .dashboard-box h3 {
     color: var(--text-white);
     text-transform: uppercase;
     margin-bottom: 10px;
 }
- 
+
 .dashboard-box p {
     color: var(--text-muted);
     font-size: 16px;
 }
- 
+
 .status-active {
     color: #28a745;
     font-weight: bold;
 }
- 
-.clear { clear: both; }
- 
+
+.clear {
+    clear: both;
+}
+
+
 /* ============================================================
    Programs Page
    ============================================================ */
 .p1 { background-image: url(../images/body\ building\ black\ and\ white.jpg); }
 .p2 { background-image: url(../images/cardio.jpg); }
 .p3 { background-image: url(../images/power\ lifting\ black.jpg); }
- 
+
 .program-box {
     height: 350px;
     background-size: cover;
@@ -846,19 +891,18 @@ button:hover { background: darkorange; }
     overflow: hidden;
     border-radius: 15px;
     transition: 0.5s ease;
-    width: 30%; /* عشان يفضلوا 3 في الصف */
+    width: 30%;
     float: left;
     margin: 1.5%;
 }
 
-/* الطبقة السوداء الشفافة المحسنة */
 .program-box .overlay {
-    position: absolute; /* ده اللي هيخليها تغطي الصورة بالكامل */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.65); /* التظليل المطلوب */
+    background: rgba(0, 0, 0, 0.65);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -866,15 +910,14 @@ button:hover { background: darkorange; }
     transition: 0.5s;
 }
 
-/* التفاعل عند تمرير الماوس */
 .program-box:hover {
     transform: scale(1.05);
 }
 
 .program-box:hover .overlay {
-    background: rgba(255, 180, 0, 0.4); /* اللون البرتقالي عند الوقوف عليه */
+    background: rgba(255, 180, 0, 0.4);
 }
- 
+
 .overlay {
     background: rgba(0, 0, 0, 0.65);
     width: 100%;
@@ -885,25 +928,26 @@ button:hover { background: darkorange; }
     align-items: center;
     transition: 0.5s;
 }
- 
+
 .overlay i {
     font-size: 50px;
     color: var(--primary);
     margin-bottom: 15px;
 }
- 
+
 .overlay h3 {
     color: var(--text-white);
     font-size: 24px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
- 
+
 .overlay p {
     color: #eee;
     font-size: 14px;
 }
- 
+
+
 /* ============================================================
    Video Section
    ============================================================ */
@@ -912,19 +956,19 @@ button:hover { background: darkorange; }
     background-color: var(--bg-black);
     text-align: center;
 }
- 
+
 .video-heading h2 {
     color: var(--primary);
     font-size: 32px;
     text-transform: uppercase;
     margin-bottom: 10px;
 }
- 
+
 .video-heading p {
     color: var(--text-white);
     margin-bottom: 30px;
 }
- 
+
 .video-container {
     max-width: 900px;
     margin: 0 auto;
@@ -935,14 +979,15 @@ button:hover { background: darkorange; }
     background-color: var(--bg-black);
     line-height: 0;
 }
- 
+
 .local-video {
     width: 100%;
     height: auto;
     display: block;
     outline: none;
 }
- 
+
+
 /* ============================================================
    About Page - Specific Sections
    ============================================================ */
@@ -950,48 +995,50 @@ button:hover { background: darkorange; }
     background: var(--bg-black);
     padding: 100px 10%;
 }
- 
+
 .nav1 {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
 }
- 
-.phil h3 { font-size: 40px; }
- 
+
+.phil h3 {
+    font-size: 40px;
+}
+
 .fitness p {
     font-size: 20px;
     margin-bottom: 15px;
 }
- 
+
 .values {
     background-color: rgb(13, 13, 13);
     padding: 100px 30px;
 }
- 
+
 .values h5 {
     color: #f5c518;
     padding-left: 20px;
     padding-bottom: 10px;
     letter-spacing: 4px;
 }
- 
+
 .values h2 {
     padding-left: 20px;
     font-size: 30px;
 }
- 
+
 .value {
     display: flex;
     gap: 30px;
 }
- 
+
 .line {
     border: 1px solid #f5c518;
     margin: 10px 300px 10px 0;
 }
- 
+
 .val,
 .member {
     background: #0d0d0d;
@@ -1002,27 +1049,34 @@ button:hover { background: darkorange; }
     height: 200px;
     margin: 20px;
 }
- 
-.val h1 { padding-bottom: 8px; }
- 
-.member h5 { color: #f5c518; }
- 
+
+.val h1 {
+    padding-bottom: 8px;
+}
+
+.member h5 {
+    color: #f5c518;
+}
+
 .Team {
     background-color: var(--bg-black);
     padding: 200px 30px;
 }
- 
+
 .Team h4 {
     padding-left: 20px;
     letter-spacing: 5px;
 }
- 
-.Team h2 { padding-left: 20px; }
- 
+
+.Team h2 {
+    padding-left: 20px;
+}
+
 .coach {
     display: flex;
     gap: 30px;
 }
+
 .story {
     background-image: url("../images/gym1.jpg");
     background-size: cover;
@@ -1030,28 +1084,449 @@ button:hover { background: darkorange; }
     text-align: center;
     padding: 150px 20px;
 }
+
 .story h3 {
     color: var(--primary);
     font-size: 60px;
     margin-bottom: 20px;
 }
- 
+
 .story h4 {
     font-size: 50px;
     margin-bottom: 30px;
 }
- 
+
 .story h5 {
     font-size: 22px;
     line-height: 1.8;
 }
- 
+
+
 /* ============================================================
-   Responsive
+   RESPONSIVE — Tablet (max-width: 1024px)
+   ============================================================ */
+@media (max-width: 1024px) {
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    .hero-content h1,
+    .hero-content h2 {
+        font-size: 50px;
+    }
+
+    .mainabout-content h2 {
+        font-size: 50px;
+    }
+
+    .about {
+        padding: 40px 30px;
+        gap: 30px;
+    }
+
+    .about-img img {
+        width: 300px;
+    }
+
+    .services {
+        padding: 40px 30px;
+    }
+
+    .services-boxs {
+        gap: 15px;
+    }
+
+    .box {
+        width: 31%;
+    }
+
+    .pricing-boxes {
+        gap: 40px;
+    }
+
+    .program-box {
+        width: 45%;
+    }
+
+    .nav1 {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Team {
+        padding: 100px 30px;
+    }
+
+    .line {
+        margin: 10px 100px 10px 0;
+    }
+
+    .story h3 {
+        font-size: 45px;
+    }
+
+    .story h4 {
+        font-size: 36px;
+    }
+
+    .story h5 {
+        font-size: 18px;
+    }
+}
+
+
+/* ============================================================
+   RESPONSIVE — Mobile (max-width: 768px)
    ============================================================ */
 @media (max-width: 768px) {
-    .video-container  { max-width: 95%; }
-    .contact-grid     { grid-template-columns: 1fr; }
-    .navbar           { padding: 10px 20px; }
-    .nav-links        { display: none; }
+
+    /* Navbar */
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 12px 5%;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        padding: 4px 6px;
+    }
+
+    .login {
+        padding: 7px 14px;
+        font-size: 13px;
+        margin-right: 6px;
+    }
+
+    .signup {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+
+    /* Main Wrapper */
+    .main-wrapper {
+        padding-top: 80px;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero-content h1,
+    .hero-content h2 {
+        font-size: 32px;
+        letter-spacing: 1px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    /* MainAbout */
+    .mainabout {
+        height: auto;
+        min-height: 50vh;
+        padding: 80px 20px;
+    }
+
+    .mainabout-content h2 {
+        font-size: 34px;
+    }
+
+    /* About */
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .about-img img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .about-text {
+        max-width: 100%;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Services */
+    .services {
+        padding: 40px 20px;
+    }
+
+    .services-boxs {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    /* Programs */
+    .program-box {
+        width: 95%;
+        float: none;
+        margin: 8px auto;
+        display: block;
+    }
+
+    /* Pricing */
+    .pricing {
+        padding: 60px 20px;
+    }
+
+    .pricing-boxes {
+        gap: 25px;
+    }
+
+    .plan-card {
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* Plans Cards */
+    .plans {
+        margin: 20px;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* FAQ */
+    .faq {
+        padding: 60px 20px;
+    }
+
+    .faq-title {
+        font-size: 26px;
+    }
+
+    .faq-question h3 {
+        font-size: 14px;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .contact-title {
+        font-size: 26px;
+    }
+
+    .contact-card {
+        width: 100%;
+        max-width: 340px;
+        padding: 30px 20px;
+    }
+
+    /* Contact Form */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .contact-container {
+        padding: 20px;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-column {
+        min-width: unset;
+        width: 100%;
+    }
+
+    /* Dashboard */
+    .container {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .welcome-box h1 {
+        font-size: 28px;
+    }
+
+    .dashboard-box {
+        min-width: unset;
+        max-width: 100%;
+    }
+
+    /* About Page */
+    .black {
+        padding: 60px 20px;
+    }
+
+    .nav1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .phil h3 {
+        font-size: 26px;
+    }
+
+    .fitness p {
+        font-size: 16px;
+    }
+
+    .values {
+        padding: 60px 20px;
+    }
+
+    .value {
+        flex-direction: column;
+    }
+
+    .val,
+    .member {
+        height: auto;
+        margin: 8px 0;
+    }
+
+    .line {
+        margin: 10px 0;
+    }
+
+    .Team {
+        padding: 60px 20px;
+    }
+
+    .coach {
+        flex-direction: column;
+    }
+
+    /* Story */
+    .story {
+        padding: 80px 20px;
+    }
+
+    .story h3 {
+        font-size: 34px;
+    }
+
+    .story h4 {
+        font-size: 26px;
+    }
+
+    .story h5 {
+        font-size: 16px;
+    }
+
+    /* Video */
+    .main-video-section {
+        padding: 40px 20px;
+    }
+
+    .video-heading h2 {
+        font-size: 22px;
+    }
+
+    .video-preview {
+        height: 200px;
+    }
+}
+
+
+/* ============================================================
+   RESPONSIVE — Small Mobile (max-width: 480px)
+   ============================================================ */
+@media (max-width: 480px) {
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .logo h1 {
+        font-size: 15px;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    .login,
+    .signup {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .hero-content h1,
+    .hero-content h2 {
+        font-size: 24px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+
+    .mainabout-content h2 {
+        font-size: 26px;
+    }
+
+    .contact-title {
+        font-size: 20px;
+    }
+
+    .faq-title {
+        font-size: 22px;
+    }
+
+    .story h3 {
+        font-size: 26px;
+    }
+
+    .story h4 {
+        font-size: 20px;
+    }
+
+    .story h5 {
+        font-size: 14px;
+    }
+
+    .plan-card h2 {
+        font-size: 32px;
+    }
+
+    .welcome-box h1 {
+        font-size: 22px;
+    }
+
+    .footer-logo {
+        font-size: 20px;
+    }
+
+    .program-box {
+        width: 100%;
+        margin: 6px 0;
+    }
 }
