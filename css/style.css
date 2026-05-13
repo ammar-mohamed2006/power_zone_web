@@ -32,32 +32,20 @@ body {
 /* ============================================================
    Navbar
    ============================================================ */
-.nav-links {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 80px; /* نفس طول النافبار */
-        left: -100%; /* تكون مستخبية بره الشاشة شمال */
-        width: 100%;
-        background: rgba(0, 0, 0, 0.9);
-        backdrop-filter: blur(10px);
-        text-align: center;
-        transition: 0.3s all ease;
-        padding: 20px 0;
-        z-index: 999;
-    }
-
-    /* لما الكلاس ده يتضاف بالـ JS القائمة تظهر */
-    .nav-links.active {
-        left: 0;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 15px;
-    }
-
-    
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+    border-bottom: 2px solid var(--primary);
 }
  
 .logo {
@@ -1062,13 +1050,8 @@ button:hover { background: darkorange; }
    Responsive
    ============================================================ */
 @media (max-width: 768px) {
-    /* إظهار زرار المنيو */
-    .menu-toggle {
-        display: block;
-        color: var(--primary);
-        font-size: 24px;
-        cursor: pointer;
-    }
-   @media (min-width: 769px) {
-    .menu-toggle { display: none; }
+    .video-container  { max-width: 95%; }
+    .contact-grid     { grid-template-columns: 1fr; }
+    .navbar           { padding: 10px 20px; }
+    .nav-links        { display: none; }
 }
